@@ -27,11 +27,21 @@
                   </ul>
               </nav>
 
+              <!-- Mobile Header -->
+
               <div class="mobile-container" onclick="myFunction(this)">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
                 <div class="bar3"></div>
               </div>
+
+              <nav class="mobile__header-nav">
+                <ul>
+                    <li><a href="#om-mig">Om Mig</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a class="btn" href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
           </header>
         </div>
         <!-- Header End -->
@@ -69,30 +79,6 @@
 
         <!-- Om Mig Sektion Slut -->
 
-
-        <!-- Tidigare Arbete Sektion -->
-
-        <div class="tidigare-arbete-container">
-            <div class="tidigare-arbete content-container" id="portfolio">
-                <h2>Tidigare Arbete</h2>
-                <div class="card-1-holm-digital">
-                    <img src="./images/holm-digital.png" alt="Skärmdump av Holm Digitals webbplats">
-                    <h3>Holm Digital</h3>
-                    <p>Skapande av webbplats åt Holm Digital AB</p>
-                </div>
-                <div class="card-2-voii">
-                    <img src="./images/voii.png" alt="Skärmdump av Voiis webbplats">
-                    <h3>Voii</h3>
-                    <p>Skapande av webbplats åt Voii</p>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Tidigare Arbete Sektion Slut -->
-
-
-
         <!-- Kontakt Sektion -->
 
         <div class="kontakt-container">
@@ -116,20 +102,19 @@
         <!-- Footer Start -->
         <div class="footer-container">
             <footer class="footer content-container">
-                <div class="footer__logo">
-                    <img src="./images/logo.svg" alt="Logotyp">
+                <div>
+                    <img class="footer__logo" src="./images/logo.svg" alt="Logotyp">
                 </div>
                 <nav class="footer__nav">
                     <ul>
-                        <li><a href="#om-mig">Om Mig</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#kontakt">Kontakt</a></li>
+                        <li><a class="footer__nav-text" href="#om-mig">Om Mig</a></li>
+                        <li><a class="footer__nav-text" href="#portfolio">Portfolio</a></li>
+                        <li><a class="footer__nav-text" href="#kontakt">Kontakt</a></li>
                     </ul>
                 </nav>
                 <div class="footer__info">
                     <ul>
-                        <li>© Mattis 2020.</li>
-                        <li>Integritetspolicy</li>
+                        <li>© Mattis 2021.</li>
                     </ul>
                 </div>
             </footer>

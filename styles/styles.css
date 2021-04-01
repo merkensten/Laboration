@@ -101,7 +101,7 @@ img {
 }
 
 .header__logo {
-  width: 40%;
+  width: 150px;
 }
 
 .header__nav {
@@ -133,6 +133,10 @@ img {
   transform: rotate(45deg) translate(-8px, -8px);
 }
 
+.mobile__header-nav {
+  display: none;
+}
+
 .btn {
   text-decoration: none;
   border: none;
@@ -149,12 +153,18 @@ img {
   margin-top: 100px;
 }
 
-.hero {
+/* .hero {
   
-}
+} */
 
 .hero__content p {
   margin-bottom: 30px;
+}
+
+/* Om mig sektion */
+
+.om-mig__img {
+  display: none;
 }
 
 /* Kontakt */
@@ -163,6 +173,50 @@ img {
   cursor: pointer;
 }
 
+.kontakt-container {
+  margin: 20px 0;
+}
+
+.kontakt-form {
+  margin-top: 20px;
+}
+
+input, textarea {
+  border: 1px solid #7e7e7e;
+  outline: none;
+  padding: 10px 20px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+/* Footer */
+
+.footer-container {
+  background-color: var(--secondary-color);
+}
+
+.footer {
+  padding: 60px 0;
+}
+
+.footer__logo {
+  width: 150px;
+  margin-left: 20px;
+}
+
+.footer__nav {
+  margin: 40px 0;
+}
+
+.footer__nav-text {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+}
 
 /* Media Queries Smaller tablets */
 
