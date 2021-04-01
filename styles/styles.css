@@ -61,16 +61,26 @@ p {
 }
 
 
+/* Keyframes */
 
+@keyframes name {
+  
+}
+
+
+/* Media Queries Smaller tablets */
 
 @media (min-width: 576px) {
   
 }
 
+/* Media Queries bigger tablets */
+
 @media (min-width: 768px) {
   
 }
 
+/* Media Queries desktop */
 @media (min-width: 992px) {
   
 }
