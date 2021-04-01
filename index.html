@@ -15,9 +15,9 @@
         
         <!-- Header Start -->
         <div class="header-container">
-          <header class="header">
-              <div class="header__logo">
-                  <img src="./images/logo.svg" alt="Logo">
+          <header class="header content-container">
+              <div>
+                  <img  class="header__logo" src="./images/logo.svg" alt="Logo">
               </div>
               <nav class="header__nav">
                   <ul>
@@ -26,38 +26,46 @@
                       <li><button class="btn">Kontakt</button></li>
                   </ul>
               </nav>
+
+              <div class="mobile-container" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
           </header>
         </div>
         <!-- Header End -->
         <main>
         <!-- Hero Start -->
-          <div class="hero">
-            <div class="hero__content">
-                <h1>Jag skapar webbplatser från grunden.</h1>
-                <p>Vill du ha en ny hemsida? Där du får ett helhetsperspektiv från varumärkesstrategin till webbanalysen och allt däremellan?</p>
-                <button>Kontakta Mig</button>
-            </div>
-            <div class="hero__img">
-                <img src="./images/hero-bild.svg" alt="Hero bild">
-            </div>
-        
+          <div class="hero-container">
+              <div class="hero content-container">
+                <div class="hero__content">
+                    <h1>Jag skapar webbplatser från grunden.</h1>
+                    <p>Vill du ha en ny hemsida? Där du får ett helhetsperspektiv från varumärkesstrategin till webbanalysen och allt däremellan?</p>
+                    <button>Kontakta Mig</button>
+                </div>
+                <div class="hero__img">
+                    <img src="./images/hero-bild.svg" alt="Hero bild">
+                </div>
+              </div>
           </div>
         <!-- Hero End -->
         
         <!-- Om Mig Sektion Start -->
 
-        <div class="om-mig">
-            <div class="om-mig__img">
-                <img src="./images/om-mig-bild.svg" alt="Animerad bild som symboliserar en person som går">
-            </div>
-
-            <div class="om-mig__content">
-                <h1>Om Mig</h1>
-                <p>Mitt namn är Mattis Erkensten jag är en student på EC Utbildning som går utbildningen Front-End Utveckling.</p> <p>Denna Utbildning gör att jag kan skapa webbplatser från grunden. detta är den första hemsidan som jag skapar helt från grunden. Jag har skapat flera webbplatser tidigare men de har varit byggda i Wordpress.</p>
-            </div>
+        <div class="om-mig-container">
+            <div class="om-mig content-container">
+                <div class="om-mig__img">
+                    <img src="./images/om-mig-bild.svg" alt="Animerad bild som symboliserar en person som går">
+                </div>
+                <div class="om-mig__content">
+                    <h1>Om Mig</h1>
+                    <p>Mitt namn är Mattis Erkensten jag är en student på EC Utbildning som går utbildningen Front-End Utveckling.</p> <p>Denna Utbildning gör att jag kan skapa webbplatser från grunden. detta är den första hemsidan som jag skapar helt från grunden. Jag har skapat flera webbplatser tidigare men de har varit byggda i Wordpress.</p>
+                </div>
             
-        
-          </div>
+            
+              </div>
+        </div>
 
         <!-- Om Mig Sektion Slut -->
 
@@ -65,18 +73,18 @@
         <!-- Tidigare Arbete Sektion -->
 
         <div class="tidigare-arbete-container">
-            <h2>Tidigare Arbete</h2>
-
-            <div class="card-1-holm-digital">
-                <img src="./images/holm-digital.png" alt="Skärmdump av Holm Digitals webbplats">
-                <h3>Holm Digital</h3>
-                <p>Skapande av webbplats åt Holm Digital AB</p>
-            </div>
-
-            <div class="card-2-voii">
-                <img src="./images/voii.png" alt="Skärmdump av Voiis webbplats">
-                <h3>Voii</h3>
-                <p>Skapande av webbplats åt Voii</p>
+            <div class="tidigare-arbete content-container">
+                <h2>Tidigare Arbete</h2>
+                <div class="card-1-holm-digital">
+                    <img src="./images/holm-digital.png" alt="Skärmdump av Holm Digitals webbplats">
+                    <h3>Holm Digital</h3>
+                    <p>Skapande av webbplats åt Holm Digital AB</p>
+                </div>
+                <div class="card-2-voii">
+                    <img src="./images/voii.png" alt="Skärmdump av Voiis webbplats">
+                    <h3>Voii</h3>
+                    <p>Skapande av webbplats åt Voii</p>
+                </div>
             </div>
         </div>
 
@@ -88,13 +96,14 @@
         <!-- Kontakt Sektion -->
 
         <div class="kontakt-container">
-            <h2>Kontakta Mig</h2>
-
-            <div class="kontakt-form">
-                <input type="text" name="namn" id="namn" placeholder="Namn...">
-                <input type="email" name="e-post" id="e-post" placeholder="E-post...">
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Meddelande..."></textarea>
-                <input type="button" value="Skicka">
+            <div class="kontakt content-container">
+                <h2>Kontakta Mig</h2>
+                <div class="kontakt-form">
+                    <input type="text" name="namn" id="namn" placeholder="Namn...">
+                    <input type="email" name="e-post" id="e-post" placeholder="E-post...">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Meddelande..."></textarea>
+                    <input type="button" value="Skicka">
+                </div>
             </div>
         </div>
 
@@ -105,25 +114,29 @@
 
         </main>
         <!-- Footer Start -->
-        <footer class="footer">
-            <div class="footer__logo">
-                <img src="./images/logo.svg" alt="Logotyp">
-            </div>
-            <nav class="footer__nav">
-                <ul>
-                    <li><a href="#om-mig">Om Mig</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#kontakt">Kontakt</a></li>
-                </ul>
-            </nav>
-            <div class="footer__info">
-                <ul>
-                    <li>© Mattis 2020.</li>
-                    <li>Integritetspolicy</li>
-                </ul>
-            </div>
-        </footer>
+        <div class="footer-container">
+            <footer class="footer content-container">
+                <div class="footer__logo">
+                    <img src="./images/logo.svg" alt="Logotyp">
+                </div>
+                <nav class="footer__nav">
+                    <ul>
+                        <li><a href="#om-mig">Om Mig</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__info">
+                    <ul>
+                        <li>© Mattis 2020.</li>
+                        <li>Integritetspolicy</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
         <!-- Footer end -->
     </div>
+
+    <script src="./main.js"></script>
   </body>
 </html>
