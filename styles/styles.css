@@ -67,6 +67,15 @@ li {
 
 a {
   text-decoration: none;
+  color: #000;
+}
+
+a::after {
+  color: #000;
+}
+
+a:active {
+  color: #000;
 }
 
 img {
@@ -89,8 +98,8 @@ img {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
+  overflow: hidden;
   z-index: 100;
 }
 
@@ -254,15 +263,19 @@ textarea {
 
   .hero {
     display: flex;
+    margin-top: 100px;
   }
 
   .om-mig {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
   }
 
   .om-mig__img {
     display: block;
+    margin-top: 50px;
+    width: 90%;
   }
 }
 
@@ -274,8 +287,20 @@ textarea {
     margin: 0 auto;
   }
 
+  .hero {
+    margin-top: 150px;
+  }
+
   .kontakt-form {
     width: 50%;
+  }
+
+  .om-mig {
+    margin: 60px auto;
+  }
+
+  .om-mig__img {
+    margin-top: 0;
   }
 
   .footer {
@@ -288,5 +313,9 @@ textarea {
 
   .footer__nav-text {
     margin-bottom: 0px;
+  }
+
+  .footer__info {
+    padding-right: 20px;
   }
 }
