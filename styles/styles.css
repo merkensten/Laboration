@@ -1,10 +1,10 @@
 /* Font import */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 /* Variables */
 :root {
-  --primary-color: #211E4D;
-  --secondary-color: #F3F3F3;
+  --primary-color: #211e4d;
+  --secondary-color: #f3f3f3;
   --off-white-color: #fafafa;
 }
 
@@ -22,7 +22,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -30,13 +30,15 @@ h1 {
   font-weight: 700;
   line-height: 4.5rem;
   margin: 0;
+  word-wrap: break-word;
 }
 
 h2 {
   font-size: 3.5rem;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 3rem;
   padding: 10px 0;
+  word-wrap: break-word;
 }
 
 h3 {
@@ -78,7 +80,6 @@ img {
 /* Keyframes */
 
 @keyframes name {
-  
 }
 
 /* Header */
@@ -113,7 +114,9 @@ img {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -126,7 +129,9 @@ img {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -177,11 +182,16 @@ img {
   margin: 20px 0;
 }
 
+.kontakt__h2 {
+  text-align: center;
+}
+
 .kontakt-form {
   margin-top: 20px;
 }
 
-input, textarea {
+input,
+textarea {
   border: 1px solid #7e7e7e;
   outline: none;
   padding: 10px 20px;
@@ -221,7 +231,10 @@ input, textarea {
 /* Media Queries Smaller tablets */
 
 @media (min-width: 576px) {
-  
+  .kontakt-form {
+    width: 60%;
+    margin: 20px auto;
+  }
 }
 
 /* Media Queries bigger tablets */
@@ -238,6 +251,19 @@ input, textarea {
   .mobile-container {
     display: none;
   }
+
+  .hero {
+    display: flex;
+  }
+
+  .om-mig {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .om-mig__img {
+    display: block;
+  }
 }
 
 /* Media Queries desktop */
@@ -246,5 +272,21 @@ input, textarea {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .kontakt-form {
+    width: 50%;
+  }
+
+  .footer {
+    padding: 60px 0;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__nav-text {
+    margin-bottom: 0px;
   }
 }
