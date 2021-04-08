@@ -151,7 +151,6 @@ img {
 
 /* Mobile header */
 
-
 .topnav {
   /* overflow: hidden; */
   background-color: #f2f2f2;
@@ -190,9 +189,6 @@ img {
   font-size: 30px;
 }
 
-
-
-
 /* Mobile header end */
 
 .btn {
@@ -212,13 +208,9 @@ img {
 
 /* Hero */
 
-/* .hero-container {
-  
-} */
-
-/* .hero {
-  
-} */
+.hero {
+  margin-top: 30px;
+}
 
 .hero__content p {
   margin-bottom: 30px;
@@ -366,5 +358,4 @@ textarea {
   .om-mig__img {
     margin-top: 0;
   }
-
 }
