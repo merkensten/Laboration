@@ -18,11 +18,13 @@
 
 html {
   font-size: 62.5%; /* Makes the root font size to 10px for default browsers */
+  scroll-padding-top: 100px;
 }
 
 body {
   font-size: 1.6rem;
   font-family: "Montserrat", sans-serif;
+  padding-top: 100px;
 }
 
 h1 {
@@ -168,9 +170,9 @@ img {
 
 /* Hero */
 
-.hero-container {
-  margin-top: 100px;
-}
+/* .hero-container {
+  
+} */
 
 /* .hero {
   
@@ -268,7 +270,6 @@ textarea {
 
   .hero {
     display: flex;
-    margin-top: 100px;
   }
 
   .om-mig {
@@ -306,10 +307,6 @@ textarea {
     padding: 0 20px;
     max-width: 1200px;
     margin: 0 auto;
-  }
-
-  .hero {
-    margin-top: 150px;
   }
 
   .kontakt-form {
